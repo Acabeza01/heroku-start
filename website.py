@@ -3,10 +3,7 @@ from voetbal import haalLijst, ChampionsLeague
 from datetime import datetime
 import pytz
 
-app = Flask('website')
-
-app.config['FREEZER_REMOVE_EXTRA_FILES'] = False
-app.config['FREEZER_DESTINATION']= 'docs'
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -33,6 +30,7 @@ def spa():
 def CL():
     datum = datetime.now().replace(second=0, microsecond=0).astimezone(pytz.timezone('Europe/Amsterdam'))
     return render_template("cl.html", lijst = ChampionsLeague(), date=datum)
-# if __name__ == '__main__':
-#     from elsa import cli
-#     cli(app, base_url='https://acabeza01.github.io')    
+
+if __name__ == '__main__':
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
