@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import xlrd
 
 def haalRanglijst(url):
     page = requests.get("https://www.voetbalzone.nl/competitie.asp?uid="+str(url))
