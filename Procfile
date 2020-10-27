@@ -1,1 +1,1 @@
-web: flask app:website --log-file -
+web: gunicorn wsgi:website --log-file -
