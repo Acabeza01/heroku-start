@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2bd7986d5512b10ac47070914731f86cad419894f8102b4397f42d76360a9bb9"
+            "sha256": "456dbcc7ba285f4e8f987245ae7d6e18f664c9dd6fda96b2d5722fb55f0701d8"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -56,14 +56,6 @@
             "index": "pypi",
             "version": "==7.1.2"
         },
-        "elsa": {
-            "hashes": [
-                "sha256:caa4f03d1060c3ef960d25ad45d4548c6b937fe47aa3ff408f21fcd68dbe9db1",
-                "sha256:e0cb4c504e12e9f9e00486aa48ea549ebc2b46d93a175758a62f5644f2562355"
-            ],
-            "index": "pypi",
-            "version": "==0.1.6"
-        },
         "flask": {
             "hashes": [
                 "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060",
@@ -71,14 +63,6 @@
             ],
             "index": "pypi",
             "version": "==1.1.2"
-        },
-        "frozen-flask": {
-            "hashes": [
-                "sha256:0a7a71334210ce84f8cbd1dc23c8b265d3e21748805c09c77d0e6fbcc4faab14",
-                "sha256:83858d6ed8b9d3fa7fc9523e415e65fb86b99352798d7695f63cffbd59a56269"
-            ],
-            "index": "pypi",
-            "version": "==0.15"
         },
         "ghp-import": {
             "hashes": [
@@ -213,14 +197,6 @@
             ],
             "index": "pypi",
             "version": "==1.0.1"
-        },
-        "xlrd": {
-            "hashes": [
-                "sha256:546eb36cee8db40c3eaa46c351e67ffee6eeb5fa2650b71bc4c758a29a1b29b2",
-                "sha256:e551fb498759fa3a5384a94ccd4c3c02eb7c00ea424426e212ac0c57be9dfbde"
-            ],
-            "index": "pypi",
-            "version": "==1.2.0"
         }
     },
     "develop": {}
