@@ -1,49 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
- <head>
-   <meta charset="utf-8">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+{% extends 'base.html' %}
 
-   <style>
-   
-     body{
-       /* background-color: rgb(203, 208, 212); */
-      font-size: 2rem;
-      
-      background-image: url('/static/index.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-     }
-
-     .row{
-    margin: 1px 1px;
-    }
-
-    .header div{
-      border: solid;
-      border-color: rgb(128, 131, 131);
-    }
-
-    .footer {
-        font-size: 11px;
-        text-align: right;
-      }
-   </style>
-   <title>LyriCup 2020/2021</title>
- </head>
-
- <body>
- 
-
-  <div class="container mt-4">    
-
-    <div class="row h5">
-      <div class="col"><a href="/" >Eredivisie</a></div>
-      <div class="col"><a href="/spa/" >La Liga</a></div>
-      <div class="col"><a href="/eng/" >Premier League</a></div>
-      <div class="col"><a href="/CL/" >Champions League</a></div>
-  </div>
+{% block content %}
 
   <div class="row header h1">
       <div class="col-12 bg-light mt-4">Champions League</div>
@@ -69,15 +26,4 @@
         {% endif %}
 
     {% endfor %} 
-     
-    <div class="row footer mt-3 ml-3">
-      <div class="col-12 ">v{{date}}</div>
-    </div>
-    
-  </div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.sdivm.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdedivvr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
- </body>
-</html>
+{% endblock %}   

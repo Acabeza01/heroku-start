@@ -12,7 +12,7 @@ def haalRanglijst(url):
         club = a.get_text().strip()
         if (club != "Team"):
             ranglijst.append(club)
-    print(ranglijst)
+    # print(ranglijst)
     return ranglijst
 
 def haalLijst(land):
@@ -126,8 +126,8 @@ def haalLijst(land):
     sortedLijst = sorted(lijst, key=operator.attrgetter('vol'), reverse=True)
     sortedLijst = sorted(sortedLijst, key=operator.attrgetter('dist'))
 
-    for i in sortedLijst:
-        print(i.getScore())
+    # for i in sortedLijst:
+    #     print(i.getScore())
 
     return sortedLijst
 
@@ -141,11 +141,11 @@ def ChampionsLeague() :
     ploegen = []
     for a in stand:
         ploegen.append(a.get_text().strip())
-    print (ploegen)
+    # print (ploegen)
     punten = []
     for b in pnt:
         punten.append(b.get_text())
-    print (punten)
+    # print (punten)
 
     puntenR = 0
     puntenA = 0
@@ -161,18 +161,9 @@ def ChampionsLeague() :
             puntenA += int(punten[i])
     result['Totaal Arjan'] = puntenA
 
-    for key in result:
-        print( f"{key} {result[key]}")
+    # for key in result:
+    #     print( f"{key} {result[key]}")
     return (result) 
-
-    # ranglijst = []
-    # for a in stand:
-    #     club = a.get_text().strip()
-    #     if (club != "Team"):
-    #         ranglijst.append(club)
-    # print(ranglijst)
-    # return ranglijst
-
 
 if __name__ == '__main__':
     haalLijst()   
